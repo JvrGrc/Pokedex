@@ -12,7 +12,7 @@ Esta es una aplicación de Pokedex desarrollada en Android Studio usando Java. L
 
 - RecyclerView que muestra la imagen y el nombre de los Pokémon.
 - Detalles del Pokémon en una nueva pantalla al hacer clic en un elemento del RecyclerView.
-- Imágenes del Pokémon en su forma normal y shiny.
+- Imágenes del Pokémon en su forma normal y shiny junto con todas sus estadísticas .
 
 ## Demo
 
@@ -34,7 +34,7 @@ Esta es una aplicación de Pokedex desarrollada en Android Studio usando Java. L
    <img title="Arcanine details" alt="Pokemon details" src="video.gif" width="250">
 </p>
 
-## Deployment
+## Instalación
 
 1. Clona este repositorio:
 
@@ -46,10 +46,10 @@ Esta es una aplicación de Pokedex desarrollada en Android Studio usando Java. L
 
 3. Compila y ejecuta la aplicación en un dispositivo o emulador Android.
 
-## API Reference
+## API
 
 Esta aplicación utiliza [PokeAPI](https://pokeapi.co/) para obtener la información de los Pokémon.
 
-## License
+## Licencia
 
 [MIT](https://choosealicense.com/licenses/mit/)
