@@ -26,7 +26,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Retrofit conexionRetrofit;
     private boolean isLoading = false;
     private Context contexto;
 
@@ -78,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        conexionRetrofit = new Retrofit.Builder()
+        Retrofit conexionRetrofit = new Retrofit.Builder()
                 .baseUrl("https://pokeapi.co/api/v2/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
@@ -100,12 +99,11 @@ public class MainActivity extends AppCompatActivity {
                     ListaPokemonAPI listaPokemonAPI = response.body();
 
                     adaptadorListaPokemon.agregarListaPokemon(listaPokemonAPI.getResults());
-                    isLoading = false;
                 }else {
                     Toast.makeText(contexto, "" + response.errorBody(), Toast.LENGTH_SHORT).show();
-                    Log.e("aplicación", "Respuesta: " + response.toString());
-                    isLoading = false;
+                    Log.e("aplicación", "Respuesta: " + response);
                 }
+                isLoading = false;
             }
 
             @Override
