@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="normal">Normal</string>
+    <string name="shiny">Shiny</string>
+    <string name="tipo">Tipo:</string>
+    <string name="habilidades">Habilidades:</string>
+    <string name="estadisticas">Estadísticas</string>
+    <string name="textView">TextView</string>
+    <string name="ataque">Ataque:</string>
+    <string name="ataqueEspecial">Ataque especial:</string>
+    <string name="defensa">Defensa:</string>
+    <string name="defensaEspecial">Defensa especial:</string>
+    <string name="salud">Salud:</string>
+    <string name="velocidad">Velocidad:</string>
+    <string name="ejemplo">100</string>
+</resources>
